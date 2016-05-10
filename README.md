@@ -1,6 +1,6 @@
 # ember-share
 
-`ember share` is a command to share your local Ember apps with the world using [ngrok](https://ngrok.com/). No additional software installation is required once the Ember CLI addon is installed.
+Share your local Ember apps with the world using [ngrok](https://ngrok.com/). No additional software installation is required once the Ember CLI addon is installed.
 
 ## Installation
 

@@ -11,7 +11,7 @@ module.exports = {
     return {
       share: {
         name: 'share',
-        description: 'A command to share your local Ember apps with the world using ngrok.',
+        description: 'Share your local Ember apps with the world using ngrok.',
         availableOptions: [
           { name: 'port', type: Number, default: 4200, aliases: ['p'] }
         ],
@@ -25,7 +25,6 @@ module.exports = {
               self.ui.writeLine('Your sharable URL is ' + url + ' and has been copied to your clipboard!');
             });
           });
-
         }
       }
     }
