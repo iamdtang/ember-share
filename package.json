@@ -1,7 +1,7 @@
 {
   "name": "ember-share",
   "version": "0.0.3",
-  "description": "A command to share your local sites with the world",
+  "description": "A command to share your local Ember apps with the world using ngrok.",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -11,7 +11,7 @@
     "start": "ember server",
     "test": "ember try:testall"
   },
-  "repository": "",
+  "repository": "https://github.com/skaterdav85/ember-share",
   "engines": {
     "node": ">= 0.10.0"
   },

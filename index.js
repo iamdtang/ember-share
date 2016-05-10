@@ -11,7 +11,7 @@ module.exports = {
     return {
       share: {
         name: 'share',
-        description: 'Creates a sharable URL for your ember project',
+        description: 'A command to share your local Ember apps with the world using ngrok.',
         availableOptions: [
           { name: 'port', type: Number, default: 4200, aliases: ['p'] }
         ],
