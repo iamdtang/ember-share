@@ -1,7 +1,7 @@
 {
   "name": "ember-share",
   "version": "0.0.2",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "A command to share your local sites with the world",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -40,7 +40,9 @@
     "loader.js": "^4.0.1"
   },
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "ngrok",
+    "ember ngrok"
   ],
   "dependencies": {
     "copy-paste": "^1.2.0",
