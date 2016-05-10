@@ -22,7 +22,7 @@ A publicly accessible URL will be inserted into your clipboard that is ready to 
 By default, `ember share` will use port 4200. If you are running your Ember app on a port other than 4200, use the `port` option:
 
 ```
-ember serve --port 8000
+ember share --port 8000
 ```
 
 This was inspired by [Laravel Valet](https://laravel.com/docs/5.2/valet#sharing-sites).
