@@ -1,6 +1,33 @@
 /* jshint node: true */
 'use strict';
 
+var ncp = require('copy-paste');
+var ngrok = require('ngrok');
+var Promise = require('ember-cli/lib/ext/promise');
+
 module.exports = {
-  name: 'ember-share'
+  name: 'ember-share',
+  includedCommands: function() {
+    return {
+      share: {
+        name: 'share',
+        description: 'Creates a sharable URL for your ember project',
+        availableOptions: [
+          { name: 'port', type: Number, default: 4200, aliases: ['p'] }
+        ],
+        run: function(commandOptions, rawArgs) {
+          var port = commandOptions.port;
+          var self = this;
+
+          return new Promise(function(resolve, reject) {
+            ngrok.connect(port, function(err, url) {
+              ncp.copy(url);
+              self.ui.writeLine('Your sharable URL is ' + url + ' and has been copied to your clipboard!');
+            });
+          });
+
+        }
+      }
+    }
+  }
 };
