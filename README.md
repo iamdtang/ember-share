@@ -1,6 +1,14 @@
 # Ember-share
 
-This README outlines the details of collaborating on this Ember addon.
+`ember share` is a command to share your local sites with the world. No additional software installation is required once the Ember CLI Addon is installed. To share your site, simply run `ember share`. A publicly accessible URL will be inserted into your clipboard that is ready to paste directly into your browser. That's it.
+
+By default, `ember share` will use port 4200. If you are running your Ember app on a port other than 4200, use the `port` option:
+
+```
+ember serve --port 8000
+```
+
+This was inspired by Laravel Valet.
 
 ## Installation
 
