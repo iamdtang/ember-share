@@ -1,6 +1,6 @@
 {
   "name": "ember-share",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A command to share your local sites with the world",
   "directories": {
     "doc": "doc",
