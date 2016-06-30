@@ -8,21 +8,8 @@ Share your local Ember apps with the world using [ngrok](https://ngrok.com/). No
 ember install ember-share
 ```
 
-
 ## How to Use
 
-To share your site, simply run:
-
-```
-ember share
-```
-
-A publicly accessible URL will be inserted into your clipboard that is ready to paste directly into your browser.
-
-By default, `ember share` will use port 4200. If you are running your Ember app on a port other than 4200, use the `port` option:
-
-```
-ember share --port 8000
-```
+To share your site, simply run `ember serve` as always and a publicly accessible URL will be inserted into your clipboard that is ready to paste directly into your browser.
 
 This was inspired by [Laravel Valet](https://laravel.com/docs/5.2/valet#sharing-sites).
