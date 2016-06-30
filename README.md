@@ -10,6 +10,6 @@ ember install ember-share
 
 ## How to Use
 
-To share your site, simply run `ember serve` as always and a publicly accessible URL will be inserted into your clipboard that is ready to paste directly into your browser.
+To share your site, simply run `ember share`, which behaves like `ember serve`. A publicly accessible URL will be inserted into your clipboard that is ready to paste directly into your browser.
 
 This was inspired by [Laravel Valet](https://laravel.com/docs/5.2/valet#sharing-sites).
