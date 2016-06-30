@@ -1,6 +1,6 @@
 {
   "name": "ember-share",
-  "version": "0.0.7",
+  "version": "0.1.0",
   "description": "An Ember CLI command to share your local Ember apps with the world using ngrok.",
   "directories": {
     "doc": "doc",
