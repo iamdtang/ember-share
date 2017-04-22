@@ -3,7 +3,7 @@
 
 var ncp = require('copy-paste');
 var ngrok = require('ngrok');
-var Promise = require('ember-cli/lib/ext/promise');
+var Promise = require('rsvp').Promise;
 var ServeCommand = require('ember-cli/lib/commands/serve');
 
 module.exports = {
