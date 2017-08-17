@@ -1,4 +1,4 @@
-[![Ember Observer Score](https://emberobserver.com/badges/ember-share.svg)](https://emberobserver.com/addons/ember-share)
+[![Ember Observer Score](https://emberobserver.com/badges/ember-share.svg)](https://emberobserver.com/addons/ember-share) [![Build Status](https://travis-ci.org/skaterdav85/ember-share.svg?branch=master)](https://travis-ci.org/skaterdav85/ember-share)
 
 # ember-share
 
