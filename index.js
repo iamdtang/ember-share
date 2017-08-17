@@ -1,10 +1,10 @@
-/* jshint node: true */
+/* eslint-env node */
 'use strict';
 
-var ncp = require('copy-paste');
-var ngrok = require('ngrok');
-var Promise = require('rsvp').Promise;
-var ServeCommand = require('ember-cli/lib/commands/serve');
+let ncp = require('copy-paste');
+let ngrok = require('ngrok');
+let Promise = require('rsvp').Promise;
+let ServeCommand = require('ember-cli/lib/commands/serve');
 
 module.exports = {
   name: 'ember-share',
@@ -15,13 +15,13 @@ module.exports = {
         description: 'Share your local Ember apps with the world using ngrok.',
 
         run: function(commandOptions, rawArgs) {
-          var port = commandOptions.port;
-          var self = this;
+          let port = commandOptions.port;
+          let self = this;
 
-          var ngrokServer = new Promise(function(resolve, reject) {
+          let ngrokServer = new Promise(function(resolve, reject) {
             ngrok.connect(port, function(err, url) {
               ncp.copy(url);
-              self.ui.writeLine('Your sharable URL is ' + url + ' and has been copied to your clipboard!');
+              self.ui.writeLine(`Your sharable URL is ${url} and has been copied to your clipboard.`);
             });
           });
 
