@@ -1,4 +1,4 @@
-/* jshint node: true */
+/* eslint-env node */
 'use strict';
 
 var ncp = require('copy-paste');
@@ -21,7 +21,7 @@ module.exports = {
           var ngrokServer = new Promise(function(resolve, reject) {
             ngrok.connect(port, function(err, url) {
               ncp.copy(url);
-              self.ui.writeLine('Your sharable URL is ' + url + ' and has been copied to your clipboard!');
+              self.ui.writeLine('Your sharable URL is ' + url + ' and has been copied to your clipboard.');
             });
           });
 
