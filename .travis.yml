@@ -1,13 +1,13 @@
 ---
 language: node_js
 node_js:
-  - "0.12"
+  - "6"
 
 sudo: false
 
 cache:
   directories:
-    - node_modules
+    - $HOME/.npm
 
 env:
   - EMBER_TRY_SCENARIO=default
@@ -27,9 +27,7 @@ before_install:
   - "npm install -g npm@^2"
 
 install:
-  - npm install -g bower
   - npm install
-  - bower install
 
 script:
   - ember try $EMBER_TRY_SCENARIO test
