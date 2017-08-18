@@ -22,6 +22,7 @@ module.exports = {
             ngrok.connect(port, function(err, url) {
               ncp.copy(url);
               self.ui.writeLine('Your sharable URL is ' + url + ' and has been copied to your clipboard.');
+              resolve();
             });
           });
 
